@@ -2,6 +2,10 @@ export function HeyGenLogo() {
   return <img alt="HeyGen Logo" className="h-8" src="/heygen-logo.png" />;
 }
 
+export function SuneduLogo() {
+  return <img alt="HeyGen Logo" className="h-8" src="/sunedu-logo.png" />;
+}
+
 type IconSvgProps = {
   size?: number;
   width?: number;

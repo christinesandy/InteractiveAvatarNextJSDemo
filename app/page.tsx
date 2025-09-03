@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 
 import InteractiveAvatar from "@/components/InteractiveAvatar";
 export default function App() {
@@ -10,5 +10,17 @@ export default function App() {
         </div>
       </div>
     </div>
+  );
+}*/
+
+// File: app/page.tsx
+import SessionProvider from './SessionProvider';
+import ClientPage from './ClientPage';
+
+export default function HomePage() {
+  return (
+    <SessionProvider>
+      <ClientPage />
+    </SessionProvider>
   );
 }
