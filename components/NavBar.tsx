@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-
+import { useSession, signOut } from "next-auth/react";
 import { GithubIcon, SuneduLogo } from "./Icons";
 
 export default function NavBar() {
+  const { data: session } = useSession();
   return (
     <>
       <div className="flex flex-row justify-between items-center w-[1000px] m-auto p-6">
@@ -44,6 +45,13 @@ export default function NavBar() {
           >
             Public Training
           </Link>
+          {session && (
+            <button
+              onClick={() => signOut({ callbackUrl: '/' })}
+            >
+              Sign Out
+            </button>
+          )}
         </div>
       </div>
     </>

@@ -17,8 +17,8 @@ const fontMono = FontMono({
 
 export const metadata: Metadata = {
   title: {
-    default: "HeyGen Interactive Avatar SDK Demo",
-    template: `%s - HeyGen Interactive Avatar SDK Demo`,
+    default: "Sunedu.id Interactive Avatar",
+    template: `%s - Sunedu.id Interactive Avatar`,
   },
   icons: {
     icon: "/sunedu-logo.png",
@@ -48,22 +48,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// src/app/layout.tsx
-
-/*import "@/styles/globals.css";
-import { Providers } from "./providers"; // Import the new provider component
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body>
-        <Providers>{children}</Providers>
-      </body>
-    </html>
-  );
-}*/
