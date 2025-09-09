@@ -45,6 +45,11 @@ export default function NavBar() {
           >
             Public Training
           </Link>
+          {session?.user.role === 'ADMIN' && (
+            <Link href="/admin/register" className="text-yellow-400 hover:text-yellow-300">
+              Add User
+            </Link>
+          )}
           {session && (
             <button
               onClick={() => signOut({ callbackUrl: '/' })}
