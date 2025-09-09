@@ -2,55 +2,47 @@
 
 import Link from "next/link";
 
-import { GithubIcon, HeyGenLogo } from "./Icons";
+import { GithubIcon, SuneduLogo } from "./Icons";
 
 export default function NavBar() {
   return (
     <>
       <div className="flex flex-row justify-between items-center w-[1000px] m-auto p-6">
         <div className="flex flex-row items-center gap-4">
-          <Link href="https://app.heygen.com/" target="_blank">
-            <HeyGenLogo />
+          <Link href="https://sunedu.id/" target="_blank">
+            <SuneduLogo />
           </Link>
           <div className="bg-gradient-to-br from-sky-300 to-indigo-500 bg-clip-text">
             <p className="text-xl font-semibold text-transparent">
-              HeyGen Interactive Avatar SDK NextJS Demo
+              Sunedu.id
             </p>
           </div>
         </div>
         <div className="flex flex-row items-center gap-6">
           <Link
-            href="https://labs.heygen.com/interactive-avatar"
+            href="https://sunedu.id/en/about-1/"
             target="_blank"
           >
-            Avatars
+            About Us
+          </Link>
+
+          <Link
+            href="https://sunedu.id/services/microlearning-content/"
+            target="_blank"
+          >
+            Microlearning Content
           </Link>
           <Link
-            href="https://docs.heygen.com/reference/list-voices-v2"
+            href="https://sunedu.id/services/learning-management-system/"
             target="_blank"
           >
-            Voices
+            Learning Management System
           </Link>
           <Link
-            href="https://docs.heygen.com/reference/new-session-copy"
+            href="https://sunedu.id/services/blended-training/"
             target="_blank"
           >
-            API Docs
-          </Link>
-          <Link
-            href="https://help.heygen.com/en/articles/9182113-interactive-avatar-101-your-ultimate-guide"
-            target="_blank"
-          >
-            Guide
-          </Link>
-          <Link
-            aria-label="Github"
-            className="flex flex-row justify-center gap-1 text-foreground"
-            href="https://github.com/HeyGen-Official/StreamingAvatarSDK"
-            target="_blank"
-          >
-            <GithubIcon className="text-default-500" />
-            SDK
+            Public Training
           </Link>
         </div>
       </div>

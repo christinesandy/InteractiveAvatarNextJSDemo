@@ -1,4 +1,4 @@
-export function HeyGenLogo() {
+export function SuneduLogo() {
   return <img alt="HeyGen Logo" className="h-8" src="/heygen-logo.png" />;
 }
 
