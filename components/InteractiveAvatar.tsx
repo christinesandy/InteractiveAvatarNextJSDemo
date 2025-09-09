@@ -23,12 +23,12 @@ import { MessageHistory } from "./AvatarSession/MessageHistory";
 import { AVATARS } from "@/app/lib/constants";
 
 const DEFAULT_CONFIG: StartAvatarRequest = {
-  quality: AvatarQuality.Low,
+  quality: AvatarQuality.Medium,
   avatarName: AVATARS[0].avatar_id,
   knowledgeId: undefined,
   voice: {
     rate: 1.5,
-    emotion: VoiceEmotion.EXCITED,
+    emotion: VoiceEmotion.SOOTHING,
     model: ElevenLabsModel.eleven_flash_v2_5,
   },
   language: "en",
