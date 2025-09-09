@@ -1,5 +1,5 @@
 export function SuneduLogo() {
-  return <img alt="HeyGen Logo" className="h-8" src="/heygen-logo.png" />;
+  return <img alt="Sunedu Logo" className="h-8" src="/sunedu-logo.png" />;
 }
 
 type IconSvgProps = {

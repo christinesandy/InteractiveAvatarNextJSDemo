@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { Fira_Code as FontMono, Inter as FontSans } from "next/font/google";
+import { Providers } from "./providers";
 
 import NavBar from "@/components/NavBar";
 
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     template: `%s - HeyGen Interactive Avatar SDK Demo`,
   },
   icons: {
-    icon: "/heygen-logo.png",
+    icon: "/sunedu-logo.png",
   },
 };
 
@@ -37,11 +38,32 @@ export default function RootLayout({
     >
       <head />
       <body className="min-h-screen bg-black text-white">
-        <main className="relative flex flex-col gap-6 h-screen w-screen">
-          <NavBar />
-          {children}
-        </main>
+        <Providers>
+          <main className="relative flex flex-col gap-6 h-screen w-screen">
+            <NavBar />
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   );
 }
+
+// src/app/layout.tsx
+
+/*import "@/styles/globals.css";
+import { Providers } from "./providers"; // Import the new provider component
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
+}*/
